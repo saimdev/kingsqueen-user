@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Helvetica";
+  src: url("./font/h1-100.ttf") format("ttf") 100,
+    url("./font/h1-200.ttf") format("ttf") 200,
+    url("./font/h1-300.ttf") format("ttf") 300,
+    url("./font/h1-400.ttf") format("ttf") 400,
+    url("./font/h1-500.ttf") format("ttf") 500;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./font/h2-100.ttf") format("ttf") 100,
+    url("./font/h2-200.ttf") format("ttf") 200,
+    url("./font/h2-300.ttf") format("ttf") 300,
+    url("./font/h2-400.ttf") format("ttf") 400,
+    url("./font/h2-500.ttf") format("ttf") 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+:root,
+body,
+html {
+  height: 100%;
+}
+
+/* Globals */
+.pageContent {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 500px) {
+  .pageContent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .pageContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Header */
+
+/* Position and sizing of burger button */
+header .bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+}
+
+header .bm-burger-bars {
+  background: #373a47;
+}
+
+header .bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+header .bm-cross {
+  background: #bdc3c7;
+}
+
+header .bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  left: 0;
+}
+
+header .bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+header .bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+header .bm-item-list {
+  padding: 0.8em;
+}
+
+/* Individual item */
+header .bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+header .bm-overlay {
+  background: transparent !important;
+}
+
+/* Product Slider */
+
+.productSlider .slick-prev {
+  left: 50px;
+  z-index: 1;
+}
+.productSlider .slick-next {
+  right: 55px;
+}
+.productSlider .slick-prev::before {
+  content: "<";
+  color: #c81d31;
+  font-size: 50px;
+  font-weight: 600;
+}
+.productSlider .slick-next::before {
+  content: ">";
+  color: #c81d31;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* Product Gallery Slider */
+.productGalleryThumbs .swiper-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productGalleryThumbs .swiper-slide {
+  width: 90% !important;
+  opacity: 0.4;
+}
+
+.productGalleryThumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
