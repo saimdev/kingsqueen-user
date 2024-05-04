@@ -1,7 +1,7 @@
 import { UserProvider } from '@/components/context/UserContext';
 import { About, Account, Bag, Checkout, Contact, CustomerService, Home, Login, PaymentStatus, ProductDetail, ReturnOrder, ShippingAndReturns, Shop, TrackOrder, Wishlist } from '@/components/pages';
 import AccountDetails from '@/components/pages/Account/AccountDetails';
-import Orders from '@/components/pages/Account/orders';
+import Orders from '@/components/pages/Account/Orders';
 import ProtectedLayout from '@/components/layouts/ProtectedLayout';
 import ChangePassword from '@/components/pages/Account/ChangePassword';
 
